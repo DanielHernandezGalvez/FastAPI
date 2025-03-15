@@ -1,10 +1,12 @@
-import React from 'react'
-import Esignatureap from './projects/01/Esignatureap'
 
-export default function App() {
+
+function App() {
+
   return (
-    <div className='App'>
-      <Esignatureap />
-    </div>
+    <>
+      <h1 className='text-stone-900 text-4xl text-center'>hello world</h1>
+    </>
   )
 }
+
+export default App
