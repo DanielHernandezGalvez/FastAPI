@@ -1,12 +1,18 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Paquetes from "./pages/Paquetes";
+import Compra from "./pages/Compra";
 
 function App() {
-
   return (
-    <>
-      <h1 className='text-stone-900 text-4xl text-center'>hello world</h1>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/paquetes" element={<Paquetes />} />
+        <Route path="/comprar/:duracion" element={<Compra />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
